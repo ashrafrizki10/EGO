@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" fill="none">
+  <defs>
+    <linearGradient id="fade" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" rx="80" fill="#0f172a" />
+  <circle cx="300" cy="220" r="100" fill="#0ea5e9" fill-opacity="0.12" />
+  <path d="M210 420C210 366.981 253.981 323 307 323H293C346.019 323 390 366.981 390 420V456H210V420Z" fill="#38bdf8" fill-opacity="0.18" />
+  <path d="M300 170C256.653 170 220 206.653 220 250C220 293.347 256.653 330 300 330C343.347 330 380 293.347 380 250C380 206.653 343.347 170 300 170Z" fill="#38bdf8" fill-opacity="0.3" />
+  <text x="300" y="530" text-anchor="middle" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="36">EGO FLOW</text>
+  <rect x="0" y="0" width="600" height="600" fill="url(#fade)" />
+</svg>
