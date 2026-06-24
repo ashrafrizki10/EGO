@@ -5,12 +5,15 @@ import { characters } from '@/data/characters';
 import { ProgressBar } from '@/components/ProgressBar';
 import { useLocale } from '@/components/LocaleProvider';
 
-const topStrikers = characters.filter((character) => character.position === 'Striker').sort((a, b) => b.rating - a.rating).slice(0, 3);
-const topPlaymakers = characters
+const topStrikers = [...characters]
+  .filter((character) => character.position === 'Striker')
+  .sort((a, b) => b.rating - a.rating)
+  .slice(0, 3);
+const topPlaymakers = [...characters]
   .filter((character) => ['Midfielder', 'Striker', 'Forward'].includes(character.position))
   .sort((a, b) => b.stats.passing - a.stats.passing)
   .slice(0, 3);
-const topShooters = characters.sort((a, b) => b.stats.shooting - a.stats.shooting).slice(0, 3);
+const topShooters = [...characters].sort((a, b) => b.stats.shooting - a.stats.shooting).slice(0, 3);
 
 export default function StatsPage() {
   const { t } = useLocale();
@@ -59,7 +62,7 @@ export default function StatsPage() {
         <div className="rounded-[2rem] border border-slate-800/80 bg-slate-950/90 p-8 shadow-glow shadow-sky-500/10">
           <p className="text-sm uppercase tracking-[0.24em] text-sky-400">{t.statsPage.overall}</p>
           <div className="mt-6 space-y-4">
-            {characters
+            {[...characters]
               .sort((a, b) => b.rating - a.rating)
               .slice(0, 5)
               .map((character, index) => (
@@ -116,7 +119,7 @@ export default function StatsPage() {
         <div className="rounded-[2rem] border border-slate-800/80 bg-slate-950/90 p-8 shadow-glow shadow-sky-500/10">
           <p className="text-sm uppercase tracking-[0.24em] text-sky-400">Best Ratings</p>
           <div className="mt-6 space-y-4">
-            {characters
+            {[...characters]
               .sort((a, b) => b.rating - a.rating)
               .slice(0, 4)
               .map((character) => (

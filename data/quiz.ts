@@ -43,7 +43,7 @@ export const quizQuestions: QuizQuestion[] = [
     question: 'هل تفضّل أن تكون صانع اللعب أم المنفذ؟',
     options: [
       { id: 'creator', label: 'صانع اللعب', score: { 'pierre-deville': 3, 'aoi-sakamaki': 2, 'ego-jinpachi': 1 } },
-      { id: 'finisher', label: 'المنفذ النهائي', score: { 'rin-itoshi': 3, 'reio-mikage': 2, 'baro-shinjo': 1 } },
+      { id: 'finisher', label: 'المنفذ النهائي', score: { 'rin-itoshi': 3, 'reo-mikage': 2, 'baro-shinjo': 1 } },
       { id: 'runner', label: 'الراوح والمرّن', score: { 'meguru-bachira': 3, 'hyoma-chigiri': 2, 'oskar-uber': 1 } },
     ],
   },

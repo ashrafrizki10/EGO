@@ -1,8 +1,7 @@
 import { NextResponse } from 'next/server';
 
 const baseUrl = 'https://example.com';
-
-const routes = ['/', '/characters', '/compare', '/quiz', '/stats'];
+const routes = ['/', '/characters', '/compare', '/quiz', '/stats', '/discover', '/rankings'];
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
