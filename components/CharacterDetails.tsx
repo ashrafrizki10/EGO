@@ -90,13 +90,16 @@ export function CharacterDetails({ character }: CharacterDetailsProps) {
           <div className="rounded-[2rem] border border-slate-800/80 bg-slate-900/95 p-6">
             <h3 className="text-xl font-semibold text-white">الإحصائيات</h3>
             <div className="mt-6 space-y-4">
-              <ProgressBar label="السرعة" value={character.stats.speed} />
-              <ProgressBar label="التسديد" value={character.stats.shooting} />
-              <ProgressBar label="التمرير" value={character.stats.passing} />
-              <ProgressBar label="المراوغة" value={character.stats.dribbling} />
-              <ProgressBar label="الدفاع" value={character.stats.defense} />
-              <ProgressBar label="الرؤية" value={character.stats.vision} />
-              <ProgressBar label="الذكاء التكتيكي" value={character.stats.intelligence} />
+              <ProgressBar label="السرعة (Speed)" value={character.stats.speed} />
+              <ProgressBar label="التسديد (Shooting)" value={character.stats.shooting} />
+              <ProgressBar label="المراوغة (Dribbling)" value={character.stats.dribbling} />
+              <ProgressBar label="التمرير (Passing)" value={character.stats.passing} />
+              <ProgressBar label="الرؤية (Vision)" value={character.stats.vision} />
+              <ProgressBar label="البدنية (Physical)" value={character.stats.physical} />
+              <ProgressBar label="الدفاع (Defense)" value={character.stats.defense} />
+              <ProgressBar label="التحرك بدون كرة (Off-Ball)" value={character.stats.offBallMovement} />
+              <ProgressBar label="الذكاء الكروي (Football IQ)" value={character.stats.footballIQ} />
+              <ProgressBar label="الأنا (Ego)" value={character.stats.ego} />
             </div>
           </div>
 
@@ -107,11 +110,14 @@ export function CharacterDetails({ character }: CharacterDetailsProps) {
                 stats={[
                   { label: 'Speed', value: character.stats.speed },
                   { label: 'Shoot', value: character.stats.shooting },
-                  { label: 'Pass', value: character.stats.passing },
                   { label: 'Dribble', value: character.stats.dribbling },
-                  { label: 'Defense', value: character.stats.defense },
+                  { label: 'Pass', value: character.stats.passing },
                   { label: 'Vision', value: character.stats.vision },
-                  { label: 'IQ', value: character.stats.intelligence },
+                  { label: 'Physical', value: character.stats.physical },
+                  { label: 'Defense', value: character.stats.defense },
+                  { label: 'Off-Ball', value: character.stats.offBallMovement },
+                  { label: 'IQ', value: character.stats.footballIQ },
+                  { label: 'Ego', value: character.stats.ego },
                 ]}
               />
             </div>

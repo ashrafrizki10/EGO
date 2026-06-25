@@ -1,13 +1,16 @@
 export type Position = 'Striker' | 'Winger' | 'Midfielder' | 'Defender' | 'Goalkeeper' | 'Forward';
 
 export interface CharacterStats {
-  speed: number;
   shooting: number;
-  passing: number;
+  speed: number;
   dribbling: number;
-  defense: number;
+  passing: number;
   vision: number;
-  intelligence: number;
+  physical: number;
+  defense: number;
+  offBallMovement: number;
+  footballIQ: number;
+  ego: number;
 }
 
 export interface Character {

@@ -18,7 +18,10 @@ function totalCharacterScore(character: typeof characters[number]) {
     character.stats.dribbling +
     character.stats.defense +
     character.stats.vision +
-    character.stats.intelligence
+    character.stats.physical +
+    character.stats.offBallMovement +
+    character.stats.footballIQ +
+    character.stats.ego
   );
 }
 
@@ -128,11 +131,14 @@ export default function ComparePage() {
                     stats={[
                       { label: 'SPD', value: character.stats.speed },
                       { label: 'SHO', value: character.stats.shooting },
-                      { label: 'PAS', value: character.stats.passing },
                       { label: 'DRI', value: character.stats.dribbling },
-                      { label: 'DEF', value: character.stats.defense },
+                      { label: 'PAS', value: character.stats.passing },
                       { label: 'VIS', value: character.stats.vision },
-                      { label: 'IQ', value: character.stats.intelligence },
+                      { label: 'PHY', value: character.stats.physical },
+                      { label: 'DEF', value: character.stats.defense },
+                      { label: 'OFF', value: character.stats.offBallMovement },
+                      { label: 'IQ', value: character.stats.footballIQ },
+                      { label: 'EGO', value: character.stats.ego },
                     ]}
                   />
                 </div>
